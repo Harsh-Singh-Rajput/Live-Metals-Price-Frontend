@@ -3,8 +3,6 @@ const metalsTableBody = document.querySelector(".metalsTableBody")
 const input = document.querySelector("#inputCurrency");
 submitbtn = document.querySelector("#submit");
 
-
-
 submitbtn.addEventListener('click', fetchPrice);
 document.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
@@ -96,7 +94,7 @@ async function fetchPrice() {
 
 
 function inputCheck (){
-    let word = input.value;
+    let word = input.value.trim();
     let wordlength = word.length;
     console.log("Data type ",typeof word)
     if (wordlength > 3 || wordlength < 3) {
