@@ -15,7 +15,7 @@ async function fetchPrice() {
         console.log("Fetching Price");
         const inputValue = input.value.toUpperCase();
         console.log("In Frontend and Input is ", inputValue);
-        const priceInfo = await fetch('http://localhost:5000//getPrice',
+        const priceInfo = await fetch('http://localhost:5000/getPrice',
             {
                 method: 'POST',
                 headers: {
