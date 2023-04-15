@@ -15,7 +15,7 @@ async function fetchPrice() {
         console.log("Fetching Price");
         const inputValue = input.value.toUpperCase();
         console.log("In Frontend and Input is ", inputValue);
-        const priceInfo = await fetch('https://live-metals-price.herokuapp.com/getPrice',
+        const priceInfo = await fetch('https://live-metals-price-backend.harsh-singh-raj.repl.co/getPrice',
             {
                 method: 'POST',
                 headers: {
